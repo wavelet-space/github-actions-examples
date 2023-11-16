@@ -7,3 +7,5 @@ on:
   schedule:
     - cron: '*/5 * * * *'
 ```
+
+- <https://github.com/actions/github-script>

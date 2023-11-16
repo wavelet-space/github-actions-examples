@@ -17,7 +17,7 @@ jobs:
       name: Create timestamp file 1
       with:
         script: |
-          touch `date +"%FT%H%M%S"`.txt
+          
     - name: Create timestamp file 2
       run: |
         touch `date +"%FT%H%M%S"`.txt
