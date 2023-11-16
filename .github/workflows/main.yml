@@ -2,7 +2,7 @@ name: scheduled action
 
 on:
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '1 * * * *'
 
 permissions:
   contents: write
