@@ -13,12 +13,7 @@ jobs:
     if: ${{ github.repository != 'simonw/shot-scraper-template' }}
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/github-script@v6
-      name: Create timestamp file 1
-      with:
-        script: |
-          
-    - name: Create timestamp file 2
+    - name: Create timestamp file
       run: |
         touch `date +"%FT%H%M%S"`.txt
     - name: Commit and push
