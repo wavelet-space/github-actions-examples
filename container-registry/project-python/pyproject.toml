@@ -1,0 +1,9 @@
+[project]
+name = "project-python"
+version = "1.0.0" 
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[project.scripts]
+project-python = "main:main"
