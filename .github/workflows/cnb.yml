@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Create timestamped file
       run: |
-         curl -s https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt?date=$(date +'%d.%m.%Y') >  exr-$(date '+%Y-%m-%d').txt
+         curl -s https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt?date=$(date +'%d.%m.%Y') >  .data/cnb/exr-$(date '+%Y-%m-%d').txt
     - name: Commit and push
       run: |-
         git config user.name "Automated"
